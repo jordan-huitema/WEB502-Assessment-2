@@ -50,6 +50,8 @@ header .mobile-menu { display: none; margin: 0 0.1em 0 0; color: #ffffff; }
 
 .footer-index { width: 50%; display: flex; margin: 1em 0 3em 0; }
 
+.footer-index p { cursor: pointer; }
+
 .footer-index div { margin: 0 auto; }
 
 .footer-index div:last-of-type { padding-top: 2.7em; }
@@ -142,7 +144,7 @@ header .mobile-menu { display: none; margin: 0 0.1em 0 0; color: #ffffff; }
 
 @media screen and (max-width: 1480px) { .browse-showcase { width: 85% !important; } }
 
-@media screen and (max-width: 680px) { .browse { flex-direction: column; align-items: center; margin: 1em !important; } .browse-sidebar { width: 95% !important; max-width: 500px; } .browse-sidebar-filter button { margin: 0.15em 0 !important; } .browse-showcase { margin: 0.5em !important; width: 95% !important; } }
+@media screen and (max-width: 680px) { .browse { flex-direction: column; align-items: center; margin: 0 !important; } .browse-sidebar { width: 95% !important; max-width: 500px; } .browse-sidebar-filter button { margin: 0.15em 0 !important; } .browse-showcase { margin: 0.5em !important; width: 100% !important; } .browse-showcase-product { padding-right: 0.5em !important; } }
 
 .browse { margin: 0 1em 0 0; display: flex; }
 
@@ -218,7 +220,7 @@ header .mobile-menu { display: none; margin: 0 0.1em 0 0; color: #ffffff; }
 
 @media screen and (max-width: 1050px) { .payment-form { width: 100% !important; margin: 0 !important; } }
 
-@media screen and (max-width: 660px) { .payment { flex-direction: column; width: 95%; margin: auto; } .payment-sidebar, .payment-form { width: 100% !important; } .payment-sidebar h3:last-of-type, .payment-form h3:last-of-type { margin: 1em 0 -0.5em 0 !important; } .payment-sidebar-card i, .payment-form-card i { font-size: 11vw !important; } }
+@media screen and (max-width: 660px) { .payment { flex-direction: column; width: 95%; margin: auto; } .payment-sidebar, .payment-form { width: 100% !important; } .payment-sidebar-card i, .payment-form-card i { font-size: 11vw !important; } }
 
 .payment { display: flex; flex-grow: 1; }
 

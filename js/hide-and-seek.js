@@ -16,13 +16,12 @@ function toggle (cls, fixed) {
 
 console.log("ran hide-and-seek.js")
 
-
 /* html syntax
 
-<tag onclick="toggle('class name')" </tag>
+<tag onclick="toggle('class name')"> </tag>
 or
-<tag onclick="toggle('class name', 'hide')" </tag>
-<tag onclick="toggle('class name', 'show')" </tag>
+<tag onclick="toggle('class name', 'hide')"></tag>
+<tag onclick="toggle('class name', 'show')"></tag>
 
 funcs will find input class name and toggle their 'display' attribute
 funcs with added show or hide param will only show or hide

@@ -28,3 +28,10 @@ inputElms.forEach(elm => {
 paymentChange();
 
 console.log("ran payment-calc.js");
+
+/*
+
+This function uses an object of input and output elements to calculate a cost and then set the output elements at the ditermined values
+This funciton is semi resuable but the calculations are custom and it is hard to read due to everything being done off var[0] instead of name's
+
+*/
