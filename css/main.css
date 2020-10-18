@@ -240,7 +240,7 @@ header .mobile-menu { display: none; margin: 0 0.1em 0 0; color: #ffffff; }
 
 .payment-sidebar > h4 input { width: 3em; float: right; }
 
-.payment-form { width: 50%; display: flex; flex-direction: column; align-content: flex-start; margin: 1em auto; background-color: #eeeeee; padding: 1em; border-radius: 4px; height: min-content; }
+.payment-form { width: 50%; max-width: 900px; display: flex; flex-direction: column; align-content: flex-start; margin: 1em auto; background-color: #eeeeee; padding: 1em; border-radius: 4px; height: min-content; }
 
 .payment-form > h3:last-of-type { margin: 2em 0 -1em 0; }
 
@@ -269,3 +269,5 @@ header .mobile-menu { display: none; margin: 0 0.1em 0 0; color: #ffffff; }
 .login > div label { font-weight: 500; }
 
 .login > div button { margin-top: 1em; width: min-content; padding: 0.5em; white-space: nowrap; border: 0; background-color: #eb2340; color: #ffffff; font-weight: 700; font-size: 1em; align-self: flex-end; }
+
+/*# sourceMappingURL=main.css.map */
