@@ -170,6 +170,8 @@ header .mobile-menu { display: none; margin: 0 0.1em 0 0; color: #ffffff; }
 
 .browse-sidebar-filter-options button { padding: 0.5em 0.5em 0.5em 2em; background-color: #4d4c4c80; color: #141414; font-weight: 700; margin: 0.15em 0 0.15em 0; }
 
+.browse-sidebar-filter-options .active { background-color: #eb2340 !important; color: white !important; }
+
 .browse-showcase { display: flex; flex-wrap: wrap; width: 70%; margin: 1em auto; justify-content: center; align-content: flex-start; }
 
 .browse-showcase-product { width: 500px; display: flex; border: 1px solid #bbbbbb8c; border-radius: 4px; margin: 0.25em; height: min-content; color: #444444; cursor: pointer; }

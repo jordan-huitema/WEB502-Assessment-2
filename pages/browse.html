@@ -59,6 +59,14 @@
             <h3>Dual Sport</h3>
         </div>
         <div class="browse-sidebar-filter">
+            <button class="browse-sidebar-reset" onclick="switchTo(``, `browse-filters-switch`,`reset`)">
+                <div>
+                    <p>Reset Filters</p>
+                    <i class="fa fa-undo-alt fa-lg" aria-hidden="true"></i>
+                </div>
+            </button>
+        </div>
+        <div class="browse-sidebar-filter">
             <button onclick="toggle('browse-bore-options')">
                 <div>
                     <p>Bore Size</p>
@@ -67,9 +75,9 @@
                 </div>
             </button>
             <div class="browse-sidebar-filter-options browse-bore-options hide">
-                <button>Option 1</button>
-                <button>Option 2</button>
-                <button>Option 3</button>
+                <button class="browse-filters-switch" id="option-1" onclick="switchTo(`option-1`, `browse-filters-switch`)">Option 1</button>
+                <button class="browse-filters-switch" id="option-2" onclick="switchTo(`option-2`, `browse-filters-switch`)">Option 2</button>
+                <button class="browse-filters-switch" id="option-3" onclick="switchTo(`option-3`, `browse-filters-switch`)">Option 3</button>
             </div>
         </div>
         <div class="browse-sidebar-filter">
@@ -81,9 +89,9 @@
                 </div>
             </button>
             <div class="browse-sidebar-filter-options browse-model-options hide">
-                <button>Option 1</button>
-                <button>Option 2</button>
-                <button>Option 3</button>
+                <button class="browse-filters-switch" id="option-1" onclick="switchTo(`option-1`, `browse-filters-switch`)">Option 1</button>
+                <button class="browse-filters-switch" id="option-2" onclick="switchTo(`option-2`, `browse-filters-switch`)">Option 2</button>
+                <button class="browse-filters-switch" id="option-3" onclick="switchTo(`option-3`, `browse-filters-switch`)">Option 3</button>
             </div>
         </div>
         <div class="browse-sidebar-filter">
@@ -95,9 +103,9 @@
                 </div>
             </button>
             <div class="browse-sidebar-filter-options browse-weight-options hide">
-                <button>Option 1</button>
-                <button>Option 2</button>
-                <button>Option 3</button>
+                <button class="browse-filters-switch" id="option-1" onclick="switchTo(`option-1`, `browse-filters-switch`)">Option 1</button>
+                <button class="browse-filters-switch" id="option-2" onclick="switchTo(`option-2`, `browse-filters-switch`)">Option 2</button>
+                <button class="browse-filters-switch" id="option-3" onclick="switchTo(`option-3`, `browse-filters-switch`)">Option 3</button>
             </div>
         </div>
         <div class="browse-sidebar-filter">
@@ -109,14 +117,14 @@
                 </div>
             </button>
             <div class="browse-sidebar-filter-options browse-horsepower-options hide">
-                <button>Option 1</button>
-                <button>Option 2</button>
-                <button>Option 3</button>
+                <button class="browse-filters-switch" id="option-1" onclick="switchTo(`option-1`, `browse-filters-switch`)">Option 1</button>
+                <button class="browse-filters-switch" id="option-2" onclick="switchTo(`option-2`, `browse-filters-switch`)">Option 2</button>
+                <button class="browse-filters-switch" id="option-3" onclick="switchTo(`option-3`, `browse-filters-switch`)">Option 3</button>
             </div>
         </div>
     </div>
     <div class="browse-showcase">
-        <div class="browse-showcase-product" onclick="window.location.href=`/pages/product.html`">
+        <div class="browse-showcase-product browse-filters option-1 option-3" onclick="window.location.href=`/pages/product.html`">
             <div>
                 <img src="/imgs/bike-1.webp" alt="Source https://www.pexels.com/photo/motorcycle-in-the-middle-of-the-road-1715193/">
                 <h3>Model, CC</h3>
@@ -128,7 +136,7 @@
                 <p>Horse Power: placeholder</p>
             </div>
         </div>
-        <div class="browse-showcase-product" onclick="window.location.href=`/pages/product.html`">
+        <div class="browse-showcase-product browse-filters option-2 option-1" onclick="window.location.href=`/pages/product.html`">
             <div>
                 <img src="/imgs/bike-2.webp" alt="Source https://www.pexels.com/photo/black-and-blue-sports-bike-40904/">
                 <h3>Model, CC</h3>
@@ -140,7 +148,7 @@
                 <p>Horse Power: placeholder</p>
             </div>
         </div>
-        <div class="browse-showcase-product" onclick="window.location.href=`/pages/product.html`">
+        <div class="browse-showcase-product browse-filters option-1" onclick="window.location.href=`/pages/product.html`">
             <div>
                 <img src="/imgs/bike-3.webp" alt="Source https://www.pexels.com/photo/action-bike-biker-chrome-296735/">
                 <h3>Model, CC</h3>
@@ -152,7 +160,7 @@
                 <p>Horse Power: placeholder</p>
             </div>
         </div>
-        <div class="browse-showcase-product" onclick="window.location.href=`/pages/product.html`">
+        <div class="browse-showcase-product browse-filters option-3 option-2" onclick="window.location.href=`/pages/product.html`">
             <div>
                 <img src="/imgs/bike-4.webp" alt="Source https://www.pexels.com/photo/gray-and-silver-cruiser-motorcycle-near-green-grass-lawn-163789/">
                 <h3>Model, CC</h3>
@@ -164,7 +172,7 @@
                 <p>Horse Power: placeholder</p>
             </div>
         </div>
-        <div class="browse-showcase-product" onclick="window.location.href=`/pages/product.html`">
+        <div class="browse-showcase-product browse-filters option-3" onclick="window.location.href=`/pages/product.html`">
             <div>
                 <img src="/imgs/bike-5.webp" alt="Source https://www.pexels.com/photo/white-and-black-bobber-bike-819805/">
                 <h3>Model, CC</h3>
@@ -176,7 +184,7 @@
                 <p>Horse Power: placeholder</p>
             </div>
         </div>
-        <div class="browse-showcase-product" onclick="window.location.href=`/pages/product.html`">
+        <div class="browse-showcase-product browse-filters option-3" onclick="window.location.href=`/pages/product.html`">
             <div>
                 <img src="/imgs/bike-6.webp" alt="Source https://www.pexels.com/photo/motorcycle-park-near-warehouse-2747547/">
                 <h3>Model, CC</h3>

@@ -1,8 +1,13 @@
-function switchTo(id, cls) {
+function switchTo(id, cls, opt) {
     // reset active class on buttons
     let btns = document.getElementsByClassName(cls)
     for (i = btns.length - 1; i >= 0; i--) {
         btns[i].className = btns[i].className.replace(` active`, "")
+    }
+    // if opt = reset, show all elements
+    if(opt === 'reset') {
+        toggle(cls.replace(`-switch`,""), 'show')
+        return
     }
     // set button class active
     let btn = document.getElementById(id)
@@ -10,7 +15,6 @@ function switchTo(id, cls) {
     // switch elements
     toggle(cls.replace(`-switch`,""), 'hide')
     toggle(id, 'show')
-
 }
 console.log("ran switch.js")
 
@@ -34,4 +38,5 @@ The function then adds "active" to the class list of all elements with a ID of t
 The function then use's my hide-and-seek.js script to hide all elements with the swtich Name class (this is cls - "-switch")
 The function then use's my hide-and-seek.js script to show all elements with a class matching the input id param
 
+By adding 'reset' as a third param the func will show all elements and remove all active elements
 */
